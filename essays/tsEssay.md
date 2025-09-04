@@ -1,0 +1,30 @@
+---
+layout: essay
+type: essay
+title: "Learning TypeScript and the Athletic Software Engineering Style"
+# All dates must be YYYY-MM-DD format!
+date: 2025-09-03
+published: true
+labels:
+  - ICS
+---
+
+**Learning TypeScript and the Athletic Software Engineering Style** 
+
+##My Experience with TypeScript
+
+Before this class I mostly worked with Java and C. Learning TypeScript felt familiar but also new at the same time. It has the flexibility of JavaScript but the types and interfaces remind me of Java. The ES6 stuff like arrow functions, template strings and imports were things I had seen before but never really used. Now my code looks cleaner and it is easier to read. I like that TypeScript catches mistakes before you run the code which makes working on bigger projects less stressful.
+
+##Practice WODs
+
+The athletic software engineering idea was something I had never done before. The first practice WOD felt like a rush and it was a little stressful. After doing a few I started to get faster and calmer, kind of like practicing a sport. It forces me to actually code instead of just watching or reading which helps me remember the material better.
+
+##Stress and Enjoyment
+
+The timers still make me nervous but finishing within the time limit feels good. It is uncomfortable at first but more rewarding once you see improvement. I think this style will work for me as long as I keep practicing ahead of time and treat the practice WODs like training sessions.
+
+##Final Thoughts
+
+TypeScript feels like a solid step up for JavaScript, especially when you are working on bigger projects and need type safety. The athletic software engineering method is different but it works because it turns the ideas from class into quick hands-on reps. I can already see my coding speed and confidence improving.
+
+##(I wrote this myself and used AI for grammar and rewording help.
