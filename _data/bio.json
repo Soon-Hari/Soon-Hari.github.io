@@ -11,7 +11,6 @@
     "profiles": [
       { "network": "github", "username": "Soon-Hari", "url": "http://github.com/Soon-Hari" },
       { "network": "linkedin", "username": "Jermaine Bruno", "url": "www.linkedin.com/in/jermaine-bruno-a914b8324" },
-      { "network": "twitter", "username": "None", "url": "http://twitter.com/changeme" },
       { "network": "instagram", "username": "2k.jrmaine", "url": "http://instagram.com/2k.jrmaine" }
     ]
   },
