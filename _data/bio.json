@@ -29,7 +29,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub" , "Windows" ]
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Windows" ]
     }
   ],
   "education": [
@@ -39,8 +39,7 @@
       "studyType": "B.S.",
       "startDate": "2023-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
@@ -52,7 +51,7 @@
       "endDate": "Present",
       "summary": "Front of House Staff",
       "highlights": [
-        "Provided exceptional customer service in a fast-paced, high-volume restaurant environment. Took accurate orders, delivered food promptly, and ensured a positive dining experience for all guests. Collaborated with team members to maintain cleanliness, organization, and efficient workflow. Developed strong communication, multitasking, and problem-solving skills while managing customer requests and resolving issues professionally",
+        "Provided exceptional customer service in a fast-paced, high-volume restaurant environment. Took accurate orders, delivered food promptly, and ensured a positive dining experience for all guests. Collaborated with team members to maintain cleanliness, organization, and efficient workflow. Developed strong communication, multitasking, and problem-solving skills while managing customer requests and resolving issues professionally"
       ]
     },
     {
@@ -66,12 +65,13 @@
         "Supported Missions Overseas in the INDOPACOM region"
       ]
     }
+  ],
   "awards": [
     {
       "title": "AFCEA Educational Foundation Award",
       "date": "2025-Present",
       "awarder": "Armed Forces Communications & Electronics Association International",
       "summary": "Academic Achievement awarded to students in STEM fields such as Computer Science."
-    },
+    }
   ]
 }
