@@ -27,4 +27,4 @@ The timers still make me nervous but finishing within the time limit feels good.
 
 TypeScript feels like a solid step up for JavaScript, especially when you are working on bigger projects and need type safety. The athletic software engineering method is different but it works because it turns the ideas from class into quick hands-on reps. I can already see my coding speed and confidence improving.
 
-## (I wrote this myself and used AI for grammar and rewording help.
+*I wrote this myself and used AI for grammar and rewording help.*
