@@ -1,13 +1,13 @@
 /* === FORCE DARK BACKGROUND ON ALL PAGES === */
 html, body {
   background-color: #121212 !important;
-  color: #f5f5f5 !important;
+  color: #1c1c1c !important;
 }
 
 /* Every container/section stays dark */
 section, .container, .wrapper, .main {
   background-color: #121212 !important;
-  color: #f5f5f5 !important;
+  color: #1c1c1c !important;
 }
 
 /* === PROFILE IMAGE (original size) === */
@@ -75,10 +75,8 @@ ul.icons li a svg:hover {
 /* === NAV BAR === */
 .navbar a,
 .navbar a:visited {
-  color: #f5f5f5 !important;
-  background-color: #121212 !important;
+  color: #1c1c1c !important;
 }
 .navbar a:hover {
   color: #1abc9c !important;
-  background-color: #121212 !important;
 }
