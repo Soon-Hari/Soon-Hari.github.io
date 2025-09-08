@@ -224,3 +224,32 @@ blockquote {
 a, button, nav a, .card, img {
     transition: all 0.3s ease-in-out;
 }
+
+/* Force all Techfolio social icons (fontawesome SVGs) to small size with white outline */
+.social-icons a,
+.social-icons i,
+.social-icons svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;          /* smaller size */
+  height: 40px;         /* smaller size */
+  border: 2px solid #fff; /* white outline */
+  border-radius: 50%;
+  color: #fff !important;
+  background-color: transparent;
+  padding: 6px;
+  box-sizing: border-box;
+  transition: all 0.3s ease !important;
+}
+
+/* Hover effect for the icons */
+.social-icons a:hover,
+.social-icons i:hover,
+.social-icons svg:hover {
+  background-color: #1abc9c;  /* accent on hover */
+  color: #121212 !important;  /* dark icon inside */
+  transform: scale(1.15) rotate(-5deg);
+  box-shadow: 0 4px 10px rgba(255,255,255,0.3);
+}
+
