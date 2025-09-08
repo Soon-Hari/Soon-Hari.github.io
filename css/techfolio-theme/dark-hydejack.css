@@ -1,169 +1,201 @@
-/* dark-hydejack.css - Full dark background + Hydejack-style hover animations */
+/* dark-hydejack.css - Full-site Hydejack-style dark theme */
 
 /* ---------------------------
    Base
 --------------------------- */
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #121212; /* full-page dark */
-  color: #e0e0e0;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+body, html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #121212 !important; /* full-page dark */
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Remove white container backgrounds */
-.container, .content, main {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 auto;
-  max-width: 100% !important;
+/* ---------------------------
+   Override all container backgrounds
+--------------------------- */
+.container, main, .content, .resume-section, .portfolio-section, .blog-section, section {
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    background-color: #121212 !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
 }
 
 /* ---------------------------
    Headings
 --------------------------- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
+    font-weight: 700;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
 }
 
 /* ---------------------------
    Navigation
 --------------------------- */
 header {
-  background-color: #111;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  padding: 20px 0;
+    background-color: #111;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    padding: 20px 0;
 }
 nav a {
-  color: #f0f0f0;
-  font-weight: 600;
-  margin-right: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: color 0.3s ease, transform 0.3s ease;
+    color: #f0f0f0;
+    font-weight: 600;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s, transform 0.3s;
 }
 nav a:hover {
-  color: #1abc9c;
-  transform: translateY(-2px);
+    color: #1abc9c;
+    transform: translateY(-2px);
 }
 
 /* ---------------------------
    Links
 --------------------------- */
 a {
-  color: #1abc9c;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
 a:hover {
-  text-decoration: underline;
-  transform: scale(1.03);
+    text-decoration: underline;
+    transform: scale(1.03);
 }
 
 /* ---------------------------
    Cards / Portfolio Items
 --------------------------- */
 .card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* ---------------------------
+   Portfolio card overlay on hover
+--------------------------- */
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.85);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: opacity 0.3s ease;
+}
+.card:hover .overlay {
+    opacity: 1;
 }
 
 /* ---------------------------
    Buttons
 --------------------------- */
 button, .btn {
-  background-color: #1abc9c;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 button:hover, .btn:hover {
-  background-color: #16a085;
-  transform: translateY(-2px) scale(1.03);
+    background-color: #16a085;
+    transform: translateY(-2px) scale(1.03);
 }
 
 /* ---------------------------
    Footer
 --------------------------- */
 footer {
-  background-color: #111;
-  color: #888;
-  font-size: 0.9rem;
-  padding: 30px 0;
-  text-align: center;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9rem;
+    padding: 30px 0;
+    text-align: center;
 }
 
 /* ---------------------------
-   Code
+   Code Blocks
 --------------------------- */
 pre, code {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-  border-radius: 6px;
-  padding: 6px 10px;
-  font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 pre {
-  overflow-x: auto;
-  padding: 15px;
+    overflow-x: auto;
+    padding: 15px;
 }
 
 /* ---------------------------
    Images
 --------------------------- */
 img {
-  border-radius: 6px;
-  max-width: 200px; /* smaller link/project images */
-  display: inline-block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    max-width: 200px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 img:hover {
-  transform: scale(1.05) rotate(-1deg);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
 }
 
 /* ---------------------------
    Sections
 --------------------------- */
 section {
-  padding: 60px 0;
+    padding: 60px 0;
 }
 
+/* ---------------------------
+   Horizontal Rules
+--------------------------- */
 hr {
-  border: 0;
-  height: 1px;
-  background: #333;
-  margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 40px 0;
 }
 
+/* ---------------------------
+   Blockquotes
+--------------------------- */
 blockquote {
-  border-left: 4px solid #1abc9c;
-  padding-left: 15px;
-  color: #ccc;
-  font-style: italic;
+    border-left: 4px solid #1abc9c;
+    padding-left: 15px;
+    color: #ccc;
+    font-style: italic;
 }
 
 /* ---------------------------
    Hover Animations for all interactive elements
 --------------------------- */
 a, button, nav a, .card, img {
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
