@@ -1,55 +1,58 @@
-/* === FORCE DARK BACKGROUND ON ALL PAGES === */
-html, body {
-  background-color: #121212 !important;
-  color: #1c1c1c !important;
+/* ================= GALADA THEME ================= */
+
+/* === ROOT COLORS === */
+:root {
+  --galada-bg: #121212;         /* main dark background */
+  --galada-text: #d0d0d0;       /* soft light gray text */
+  --galada-accent: #1abc9c;     /* teal accent for links & icons */
+  --galada-hover: #16e0bd;      /* hover accent */
+  --galada-border: #444;        /* dark gray borders */
+  --galada-muted: #888;         /* muted elements */
 }
 
-/* Every container/section stays dark */
-section, .container, .wrapper, .main {
-  background-color: #121212 !important;
-  color: #1c1c1c !important;
+/* === GLOBAL STYLES === */
+html, body, section, .container, .wrapper, .main {
+  background-color: var(--galada-bg) !important;
+  color: var(--galada-text) !important;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* === PROFILE IMAGE (original size) === */
+/* === HEADINGS & LINKS === */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--galada-text);
+}
+a, a:visited {
+  color: var(--galada-accent) !important;
+  transition: color 0.3s ease !important;
+}
+a:hover {
+  color: var(--galada-hover) !important;
+}
+
+/* === PROFILE IMAGE === */
 .profile img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
+  border: 3px solid var(--galada-muted);
 }
 
-/* === HEADINGS / LINKS === */
-a, a:visited {
-  color: #1abc9c !important;
-  transition: color 0.3s ease !important;
-}
-a:hover {
-  color: #16e0bd !important;
-}
-
-/* === SOCIAL ICONS (Skyblue style but on dark) === */
-:root {
-  /* no light backgrounds — only icon colors */
-  --tf-icon-fill: #ffffff;       /* white icons by default */
-  --tf-icon-hover: #1abc9c;      /* accent on hover */
-}
-
-/* Format SVG social icons */
+/* === SOCIAL ICONS === */
 .tf-social {
   display: inline-block;
-  fill: var(--tf-icon-fill);
+  fill: var(--galada-muted);
   height: 1.5em;
   width: 1.5em;
   vertical-align: -.1em;
   transition: 0.3s ease;
 }
 .tf-social:hover {
-  fill: var(--tf-icon-hover);
+  fill: var(--galada-accent);
   transform: scale(1.2) rotate(-5deg);
 }
 
-/* Make sure Techfolio <ul class="icons"> gets the style */
+/* Techfolio icons list */
 ul.icons {
   display: flex;
   flex-wrap: wrap;
@@ -57,26 +60,71 @@ ul.icons {
   padding-left: 0;
   list-style: none;
 }
-
 ul.icons li {
   display: inline-block;
   margin: 6px;
 }
-
 ul.icons li a svg {
-  fill: var(--tf-icon-fill);
+  fill: var(--galada-muted);
   transition: 0.3s ease;
 }
 ul.icons li a svg:hover {
-  fill: var(--tf-icon-hover);
+  fill: var(--galada-accent);
   transform: scale(1.2) rotate(-5deg);
 }
 
 /* === NAV BAR === */
 .navbar a,
 .navbar a:visited {
-  color: #1c1c1c !important;
+  color: var(--galada-text) !important;
+  background-color: var(--galada-bg) !important;
 }
 .navbar a:hover {
-  color: #1abc9c !important;
+  color: var(--galada-accent) !important;
+  background-color: var(--galada-bg) !important;
 }
+
+/* === TABS / PANELS / INPUTS / BUTTONS === */
+.tab, .tab-content, input, textarea, select, button, fieldset,
+.essay-tab, .essay-tab-content {
+  background-color: var(--galada-bg) !important;
+  color: var(--galada-text) !important;
+  border: 1px solid var(--galada-border) !important;
+  transition: 0.2s ease;
+}
+
+/* Focus states */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline-color: var(--galada-accent) !important;
+  box-shadow: 0 0 3px var(--galada-accent) !important;
+}
+
+/* === TABLES === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid var(--galada-border);
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  color: var(--galada-text);
+  background-color: var(--galada-bg);
+}
+
+/* === MISC STYLING === */
+hr {
+  border: 0;
+  border-top: 1px solid var(--galada-border);
+  margin: 20px 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--galada-accent);
+  padding-left: 12px;
+  color: var(--galada-text);
+  font-style: italic;
+}
+
