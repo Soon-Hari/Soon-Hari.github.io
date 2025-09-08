@@ -1,0 +1,94 @@
+/* dark-hydejack.css - Techfolios dark theme tweaked to look like Hydejack */
+
+/* ---------------------------
+   Fonts
+--------------------------- */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #121212; /* dark background */
+    color: #e0e0e0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* ---------------------------
+   Header & Navigation
+--------------------------- */
+header {
+    background-color: #111;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+nav a {
+    color: #f0f0f0;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #1abc9c; /* Hydejack accent green */
+}
+
+/* ---------------------------
+   Links & Accents
+--------------------------- */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------
+   Cards / Portfolio Items
+--------------------------- */
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+/* ---------------------------
+   Footer
+--------------------------- */
+footer {
+    background-color: #111;
+    color: #888;
+    font-size: 0.9rem;
+    padding: 20px 0;
+}
+
+/* ---------------------------
+   Code Blocks
+--------------------------- */
+pre, code {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ---------------------------
+   Buttons
+--------------------------- */
+button, .btn {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #16a085;
+}
