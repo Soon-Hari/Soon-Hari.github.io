@@ -1,32 +1,39 @@
-/* ================= GALADA THEME ================= */
+/* ================= GALADA DARK THEME ================= */
 
 /* === ROOT COLORS === */
 :root {
-  --galada-bg: #121212;         /* main dark background */
-  --galada-text: #d0d0d0;       /* soft light gray text */
-  --galada-accent: #1abc9c;     /* teal accent for links & icons */
-  --galada-hover: #16e0bd;      /* hover accent */
-  --galada-border: #444;        /* dark gray borders */
-  --galada-muted: #888;         /* muted elements */
+  --bg-dark: #121212;       /* main background */
+  --text-light: #d0d0d0;    /* soft gray text */
+  --accent: #1abc9c;        /* teal accent */
+  --hover-accent: #16e0bd;  /* hover color */
+  --border-dark: #444;       /* dark gray borders */
+  --muted: #777;             /* muted elements */
 }
 
 /* === GLOBAL STYLES === */
-html, body, section, .container, .wrapper, .main {
-  background-color: var(--galada-bg) !important;
-  color: var(--galada-text) !important;
+html, body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section, .container, .wrapper, .main {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
 
 /* === HEADINGS & LINKS === */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--galada-text);
+  color: var(--text-light);
 }
 a, a:visited {
-  color: var(--galada-accent) !important;
-  transition: color 0.3s ease !important;
+  color: var(--accent);
+  transition: color 0.3s ease;
 }
 a:hover {
-  color: var(--galada-hover) !important;
+  color: var(--hover-accent);
 }
 
 /* === PROFILE IMAGE === */
@@ -35,24 +42,23 @@ a:hover {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--galada-muted);
+  border: 3px solid var(--muted);
 }
 
 /* === SOCIAL ICONS === */
 .tf-social {
   display: inline-block;
-  fill: var(--galada-muted);
+  fill: var(--muted);
   height: 1.5em;
   width: 1.5em;
   vertical-align: -.1em;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, fill 0.3s ease;
 }
 .tf-social:hover {
-  fill: var(--galada-accent);
+  fill: var(--accent);
   transform: scale(1.2) rotate(-5deg);
 }
 
-/* Techfolio icons list */
 ul.icons {
   display: flex;
   flex-wrap: wrap;
@@ -61,42 +67,42 @@ ul.icons {
   list-style: none;
 }
 ul.icons li {
-  display: inline-block;
   margin: 6px;
 }
 ul.icons li a svg {
-  fill: var(--galada-muted);
-  transition: 0.3s ease;
+  fill: var(--muted);
+  transition: transform 0.3s ease, fill 0.3s ease;
 }
 ul.icons li a svg:hover {
-  fill: var(--galada-accent);
+  fill: var(--accent);
   transform: scale(1.2) rotate(-5deg);
 }
 
-/* === NAV BAR === */
-.navbar a,
-.navbar a:visited {
-  color: var(--galada-text) !important;
-  background-color: var(--galada-bg) !important;
+/* === NAVBAR === */
+.navbar a, .navbar a:visited {
+  color: var(--text-light);
+  background-color: var(--bg-dark);
 }
 .navbar a:hover {
-  color: var(--galada-accent) !important;
-  background-color: var(--galada-bg) !important;
+  color: var(--accent);
+  background-color: var(--bg-dark);
 }
 
 /* === TABS / PANELS / INPUTS / BUTTONS === */
 .tab, .tab-content, input, textarea, select, button, fieldset,
 .essay-tab, .essay-tab-content {
-  background-color: var(--galada-bg) !important;
-  color: var(--galada-text) !important;
-  border: 1px solid var(--galada-border) !important;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-dark);
+  padding: 8px;
   transition: 0.2s ease;
+  border-radius: 4px;
 }
 
-/* Focus states */
 input:focus, textarea:focus, select:focus, button:focus {
-  outline-color: var(--galada-accent) !important;
-  box-shadow: 0 0 3px var(--galada-accent) !important;
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 3px var(--accent);
 }
 
 /* === TABLES === */
@@ -105,26 +111,43 @@ table {
   width: 100%;
 }
 table, th, td {
-  border: 1px solid var(--galada-border);
+  border: 1px solid var(--border-dark);
 }
 th, td {
   padding: 8px;
-  text-align: left;
-  color: var(--galada-text);
-  background-color: var(--galada-bg);
+  color: var(--text-light);
+  background-color: var(--bg-dark);
 }
 
-/* === MISC STYLING === */
+/* === HR & BLOCKQUOTE === */
 hr {
   border: 0;
-  border-top: 1px solid var(--galada-border);
+  border-top: 1px solid var(--border-dark);
   margin: 20px 0;
 }
 
 blockquote {
-  border-left: 4px solid var(--galada-accent);
+  border-left: 4px solid var(--accent);
   padding-left: 12px;
-  color: var(--galada-text);
+  color: var(--text-light);
   font-style: italic;
 }
 
+/* === BUTTONS === */
+button {
+  background-color: var(--border-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-dark);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+button:hover {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+}
+
+/* === MISC === */
+* {
+  border-color: var(--border-dark);
+  color: inherit;
+}
