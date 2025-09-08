@@ -76,7 +76,9 @@ ul.icons li a svg:hover {
 .navbar a,
 .navbar a:visited {
   color: #f5f5f5 !important;
+  background-color: #121212 !important;
 }
 .navbar a:hover {
   color: #1abc9c !important;
+  background-color: #121212 !important;
 }
