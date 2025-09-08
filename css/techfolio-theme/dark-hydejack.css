@@ -28,7 +28,40 @@ a:hover {
   color: #16e0bd !important;
 }
 
-/* === SOCIAL ICONS (GitHub, LinkedIn, Instagram, etc.) === */
+/* === SOCIAL ICONS (Skyblue style) === */
+/* CSS variables for icon colors */
+:root {
+  --tf-icon-fill: #ffffff;       /* white by default */
+  --tf-icon-hover: #1abc9c;      /* accent on hover */
+}
+
+/* Format social media icons */
+.tf-social {
+  display: inline-block;
+  fill: var(--tf-icon-fill);
+  height: 1.5em;
+  vertical-align: -.1em;
+  width: 1.5em;
+  transition: 0.3s ease;
+}
+
+.tf-social:hover {
+  fill: var(--tf-icon-hover);
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* This ensures SVG icons inside links get the fill */
+ul.icons li a svg {
+  fill: var(--tf-icon-fill);
+  transition: 0.3s ease;
+}
+
+ul.icons li a svg:hover {
+  fill: var(--tf-icon-hover);
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* Layout for the icon list */
 ul.icons {
   display: flex;
   flex-wrap: wrap;
@@ -40,28 +73,6 @@ ul.icons {
 ul.icons li {
   display: inline-block;
   margin: 6px;
-}
-
-ul.icons li a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;               /* small circle size */
-  height: 40px;
-  font-size: 18px;           /* icon size inside */
-  border: 2px solid #fff;    /* white outline */
-  border-radius: 50%;
-  color: #fff !important;    /* white icon */
-  background-color: transparent;
-  transition: all 0.3s ease !important;
-}
-
-/* Hover effect for icons */
-ul.icons li a:hover {
-  background-color: #1abc9c; /* accent background */
-  color: #121212 !important; /* dark icon inside */
-  transform: scale(1.2) rotate(-5deg);
-  box-shadow: 0 4px 10px rgba(255,255,255,0.3);
 }
 
 /* === OPTIONAL: Make nav tabs consistent === */
