@@ -124,10 +124,10 @@ pre {
 }
 
 /* ---------------------------
-   Icons (small)
+   Profile / Social Icons (small & hover)
 --------------------------- */
 img.icon, .profile-img, .social-icon, .link-icon {
-    max-width: 60px;
+    max-width: 60px; /* small icons */
     height: auto;
     border-radius: 6px;
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
@@ -140,7 +140,23 @@ img.icon:hover, .profile-img:hover, .social-icon:hover, .link-icon:hover {
 }
 
 /* ---------------------------
-   Portfolio Cards / Projects (bigger)
+   Profile image (medium)
+--------------------------- */
+.profile-img {
+    max-width: 150px; /* original theme size */
+    height: auto;
+    border-radius: 50%; /* circular */
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    cursor: pointer;
+}
+.profile-img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    filter: brightness(1.1);
+}
+
+/* ---------------------------
+   Portfolio Cards / Projects (big)
 --------------------------- */
 .project-card {
     position: relative;
@@ -156,7 +172,7 @@ img.icon:hover, .profile-img:hover, .social-icon:hover, .link-icon:hover {
 }
 .project-img {
     border-radius: 8px;
-    max-width: 300px; /* bigger images */
+    max-width: 300px; /* big image */
     height: auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
