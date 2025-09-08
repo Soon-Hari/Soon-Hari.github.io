@@ -7,11 +7,29 @@
     "phone": "808-723-1113",
     "website": "https://Soon-Hari.github.io",
     "summary": "I am studying for a B.A. in Information and Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2026.",
-    "location": { "address": "", "postalCode": "96789", "city": "Mililani", "countryCode": "USA", "region": "Hawaii" },
+    "location": {
+      "address": "",
+      "postalCode": "96789",
+      "city": "Mililani",
+      "countryCode": "USA",
+      "region": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "Soon-Hari", "url": "http://github.com/Soon-Hari" },
-      { "network": "linkedin", "username": "Jermaine Bruno", "url": "www.linkedin.com/in/jermaine-bruno-a914b8324" },
-      { "network": "instagram", "username": "2k.jrmaine", "url": "http://instagram.com/2k.jrmaine" }
+      {
+        "network": "github",
+        "username": "Soon-Hari",
+        "url": "https://github.com/Soon-Hari"
+      },
+      {
+        "network": "linkedin",
+        "username": "Jermaine Bruno",
+        "url": "https://www.linkedin.com/in/jermaine-bruno-a914b8324"
+      },
+      {
+        "network": "instagram",
+        "username": "2k.jrmaine",
+        "url": "https://instagram.com/2k.jrmaine"
+      }
     ]
   },
   "interests": [
@@ -24,11 +42,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Typescript" ]
+      "keywords": ["C", "C++", "Java", "Javascript", "Typescript"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Windows" ]
+      "keywords": ["MacOS", "Git/GitHub", "Windows"]
     }
   ],
   "education": [
@@ -50,7 +68,7 @@
       "endDate": "Present",
       "summary": "Front of House Staff",
       "highlights": [
-        "Provided exceptional customer service in a fast-paced, high-volume restaurant environment. Took accurate orders, delivered food promptly, and ensured a positive dining experience for all guests. Collaborated with team members to maintain cleanliness, organization, and efficient workflow. Developed strong communication, multitasking, and problem-solving skills while managing customer requests and resolving issues professionally"
+        "Provided exceptional customer service in a fast-paced, high-volume restaurant environment. Took accurate orders, delivered food promptly, and ensured a positive dining experience for all guests. Collaborated with team members to maintain cleanliness, organization, and efficient workflow. Developed strong communication, multitasking, and problem-solving skills while managing customer requests and resolving issues professionally."
       ]
     },
     {
@@ -58,10 +76,10 @@
       "position": "Wheeled-Vehicle Mechanic",
       "website": "",
       "startDate": "2021-04-25",
-      "endDate": "present",
+      "endDate": "Present",
       "summary": "Skilled in the maintenance, repair, and inspection of wheeled military and civilian vehicles.",
       "highlights": [
-        "Supported Missions Overseas in the INDOPACOM region. Proficient in diagnosing mechanical, electrical, and hydraulic systems to ensure operational readiness and safety. Experienced in performing preventive maintenance, troubleshooting complex issues, and adhering to technical manuals and safety standard  Strong problem-solving skills, attention to detail, and the ability to work efficiently under pressure."
+        "Supported Missions Overseas in the INDOPACOM region. Proficient in diagnosing mechanical, electrical, and hydraulic systems to ensure operational readiness and safety. Experienced in performing preventive maintenance, troubleshooting complex issues, and adhering to technical manuals and safety standards. Strong problem-solving skills, attention to detail, and the ability to work efficiently under pressure."
       ]
     }
   ],
@@ -71,15 +89,18 @@
       "date": "2025-Present",
       "awarder": "Armed Forces Communications & Electronics Association International",
       "summary": "Academic Achievement awarded to students in STEM fields such as Computer Science."
-    }
+    },
     {
-      "title": "The Army Reserve Components Achievement Medal ",
+      "title": "The Army Reserve Components Achievement Medal",
       "date": "2025",
       "awarder": "US Army",
       "summary": "U.S. Army award recognizing consistent honorable service in a Reserve Component unit."
-    }
+    },
     {
-     "title": "Active Secret Security Clearance ",
+      "title": "Active Secret Security Clearance",
+      "date": "Present",
+      "awarder": "",
+      "summary": ""
     }
   ]
 }
