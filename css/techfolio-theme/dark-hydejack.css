@@ -1,16 +1,16 @@
-/* === GLOBAL DARK BACKGROUND === */
+/* === FORCE DARK BACKGROUND ON ALL PAGES === */
 html, body {
   background-color: #121212 !important;
   color: #f5f5f5 !important;
 }
 
-/* Make all sections full dark */
+/* Every container/section stays dark */
 section, .container, .wrapper, .main {
   background-color: #121212 !important;
   color: #f5f5f5 !important;
 }
 
-/* === PROFILE IMAGE (same size as original Techfolio) === */
+/* === PROFILE IMAGE (original size) === */
 .profile img {
   width: 160px;
   height: 160px;
@@ -28,40 +28,28 @@ a:hover {
   color: #16e0bd !important;
 }
 
-/* === SOCIAL ICONS (Skyblue style) === */
-/* CSS variables for icon colors */
+/* === SOCIAL ICONS (Skyblue style but on dark) === */
 :root {
-  --tf-icon-fill: #ffffff;       /* white by default */
+  /* no light backgrounds — only icon colors */
+  --tf-icon-fill: #ffffff;       /* white icons by default */
   --tf-icon-hover: #1abc9c;      /* accent on hover */
 }
 
-/* Format social media icons */
+/* Format SVG social icons */
 .tf-social {
   display: inline-block;
   fill: var(--tf-icon-fill);
   height: 1.5em;
-  vertical-align: -.1em;
   width: 1.5em;
+  vertical-align: -.1em;
   transition: 0.3s ease;
 }
-
 .tf-social:hover {
   fill: var(--tf-icon-hover);
   transform: scale(1.2) rotate(-5deg);
 }
 
-/* This ensures SVG icons inside links get the fill */
-ul.icons li a svg {
-  fill: var(--tf-icon-fill);
-  transition: 0.3s ease;
-}
-
-ul.icons li a svg:hover {
-  fill: var(--tf-icon-hover);
-  transform: scale(1.2) rotate(-5deg);
-}
-
-/* Layout for the icon list */
+/* Make sure Techfolio <ul class="icons"> gets the style */
 ul.icons {
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +63,16 @@ ul.icons li {
   margin: 6px;
 }
 
-/* === OPTIONAL: Make nav tabs consistent === */
+ul.icons li a svg {
+  fill: var(--tf-icon-fill);
+  transition: 0.3s ease;
+}
+ul.icons li a svg:hover {
+  fill: var(--tf-icon-hover);
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* === NAV BAR === */
 .navbar a,
 .navbar a:visited {
   color: #f5f5f5 !important;
