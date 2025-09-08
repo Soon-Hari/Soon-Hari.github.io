@@ -124,19 +124,26 @@ pre {
 }
 
 /* ---------------------------
-   Profile / Social Icons (small & hover)
+   Profile / Social / Link Icons (small & hover)
 --------------------------- */
-img.icon, .profile-img, .social-icon, .link-icon {
+.profile-img, .social-icon, .link-icon, img.icon {
     max-width: 60px; /* small icons */
     height: auto;
     border-radius: 6px;
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
     cursor: pointer;
+    transition: transform 0.3s ease !important, 
+                box-shadow 0.3s ease !important, 
+                filter 0.3s ease !important;
 }
-img.icon:hover, .profile-img:hover, .social-icon:hover, .link-icon:hover {
-    transform: scale(1.1) rotate(-5deg);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    filter: brightness(1.2);
+
+/* hover effect for all icons & profile image */
+.profile-img:hover,
+.social-icon:hover,
+.link-icon:hover,
+img.icon:hover {
+    transform: scale(1.1) rotate(-5deg) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4) !important;
+    filter: brightness(1.2) !important;
 }
 
 /* ---------------------------
@@ -146,13 +153,6 @@ img.icon:hover, .profile-img:hover, .social-icon:hover, .link-icon:hover {
     max-width: 150px; /* original theme size */
     height: auto;
     border-radius: 50%; /* circular */
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
-    cursor: pointer;
-}
-.profile-img:hover {
-    transform: scale(1.05) rotate(-2deg);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-    filter: brightness(1.1);
 }
 
 /* ---------------------------
