@@ -124,23 +124,26 @@ pre {
 }
 
 /* ---------------------------
-   Profile / Social / Link Icons (small & hover)
+   Profile / Social / Link Icons (hover)
 --------------------------- */
 .profile-img, .social-icon, .link-icon, img.icon {
     max-width: 60px; /* small icons */
     height: auto;
     border-radius: 6px;
+    display: block;
     cursor: pointer;
-    transition: transform 0.3s ease !important, 
-                box-shadow 0.3s ease !important, 
+    transition: transform 0.3s ease !important,
+                box-shadow 0.3s ease !important,
                 filter 0.3s ease !important;
 }
 
-/* hover effect for all icons & profile image */
+/* hover effect for all icons, including linked icons */
 .profile-img:hover,
 .social-icon:hover,
 .link-icon:hover,
-img.icon:hover {
+img.icon:hover,
+a.social-icon:hover,
+a.link-icon:hover {
     transform: scale(1.1) rotate(-5deg) !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4) !important;
     filter: brightness(1.2) !important;
@@ -152,7 +155,7 @@ img.icon:hover {
 .profile-img {
     max-width: 150px; /* original theme size */
     height: auto;
-    border-radius: 50%; /* circular */
+    border-radius: 50%;
 }
 
 /* ---------------------------
