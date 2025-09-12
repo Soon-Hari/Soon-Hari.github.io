@@ -1,15 +1,16 @@
 ---
 layout: essay
 type: essay
-title: “Asking Smart Questions: Lessons from StackOverflow”
-# All dates must be YYYY-MM-DD format!
+title: "Asking Smart Questions on StackOverflow"
 date: 2025-09-11
-published: true
 labels:
-  - ICS
+  - communication
+  - stackoverflow
+  - questions
 ---
 
 # Asking Smart Questions on StackOverflow
+
 
 ## Introduction
 
