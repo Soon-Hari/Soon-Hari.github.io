@@ -14,7 +14,7 @@ labels:
 
 ## Introduction
 
-When learning software engineering, one of the biggest skills we need is **communication**. It’s not just about writing code — it’s also about how we ask for help when we get stuck. Eric Raymond’s essay, [*How to Ask Questions the Smart Way*](http://www.catb.org/esr/faqs/smart-questions.html), explains why the way you ask a question matters a lot. A “smart” question makes it easy for other people to help you, while a “not smart” question can annoy people or get ignored.
+When learning software engineering, one of the biggest skills we need is **communication**. It’s not just about writing code, it’s also about how we ask for help when we get stuck. Eric Raymond’s essay, [*How to Ask Questions the Smart Way*](http://www.catb.org/esr/faqs/smart-questions.html), explains why the way you ask a question matters a lot. A “smart” question makes it easy for other people to help you, while a “not smart” question can annoy people or get ignored.
 
 To see the difference, I looked at two StackOverflow posts: one where the person asked a smart question, and another where the person didn’t.
 
