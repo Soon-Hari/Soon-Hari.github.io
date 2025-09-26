@@ -7,6 +7,7 @@ labels:
   - C++
   - Data Structures
   - File I/O
+logo: https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg
 ---
 
 ## Linked List Database ⚙️
@@ -17,5 +18,5 @@ My role was to rework the original C code so it followed C++ practices. That mea
 
 What I took away from this project was how different C++ feels when compared to C. Managing memory and pointers taught me to think carefully about what’s happening on the heap versus the stack, and it gave me an appreciation for higher-level tools like STL containers. I also learned how important it is to stick to a coding standard—having consistent headers, indentation, and variable names made the debugging process much less stressful.  
 
-![Linked List Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1067px-ISO_C%2B%2B_Logo.svg.png)
+![Linked List Diagram](file:///Users/mainevro/Downloads/linked-list.png)
 
