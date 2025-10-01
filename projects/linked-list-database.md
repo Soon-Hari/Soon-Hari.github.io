@@ -18,5 +18,5 @@ My role was to rework the original C code so it followed C++ practices. That mea
 
 What I took away from this project was how different C++ feels when compared to C. Managing memory and pointers taught me to think carefully about what’s happening on the heap versus the stack, and it gave me an appreciation for higher-level tools like STL containers. I also learned how important it is to stick to a coding standard—having consistent headers, indentation, and variable names made the debugging process much less stressful.  
 
-![Linked List Diagram](file:///Users/mainevro/Downloads/linked-list.png)
+![Linked List Diagram](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Linked-list-normal-image01.jpg)
 
