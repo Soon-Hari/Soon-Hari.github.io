@@ -24,9 +24,6 @@ For example, in my *Island Snow* project, I used Bootstrap 5 to create a respons
 ## Raw CSS vs. UI Frameworks
 Using raw CSS gives you complete creative freedom, but it can also lead to inconsistency and slower development. Bootstrap trades a bit of flexibility for a lot of efficiency. Instead of redefining styles for every project, I can rely on the same core structure while still customizing colors and fonts when needed. It’s a balance between creativity and productivity.
 
-![CSS vs Bootstrap Comparison](https://www.wearewibble.com/wp-content/uploads/2019/09/blog-css-vs-bootstrap-boostrap-file-size.png)  
-*Figure 1: Visual comparison between raw CSS and Bootstrap file structure. Image source: [We Are Wibble](https://www.wearewibble.com/).*
-
 ## Reflection: What I Learned
 Working with Bootstrap 5 taught me the importance of abstraction and reusability in software engineering. It’s not just about design—it’s about maintaining structure, scalability, and readability in your codebase. I also learned to appreciate documentation and naming conventions, since most frameworks rely heavily on consistent syntax and class naming.
 
