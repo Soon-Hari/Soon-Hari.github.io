@@ -1,11 +1,18 @@
 ---
 layout: project
+type: project
 title: "Skull & Crown Trading Co."
 date: 2025-10-08
-github: "https://github.com/your-username/experience-bootstrap-yourchoice-skullandcrown"
+github: "https://github.com/soon-hari/experience-bootstrap-yourchoice-skullandcrown"
 image: "https://images.squarespace-cdn.com/content/5cfada745fa13c000127af4c/e1684bdc-bb6d-4cdc-b473-a3ef470a2688/skullandcrowngoldlogo.png?format=1000w&content-type=image%2Fpng"
-tags: [Bootstrap5, WebDesign, UIFrameworks, ICS314]
+labels:
+  - Bootstrap 5
+  - Web Design
+  - UI Frameworks
+  - ICS314
 ---
+
+# Skull & Crown Trading Co.
 
 ## Overview
 For this project, I recreated the **Skull & Crown Trading Co.** website using **Bootstrap 5** as part of the *E36: Your Choice with Bootstrap 5* experience for ICS 314. The goal was to design a visually appealing and responsive homepage inspired by a real local brand while applying Bootstrap’s components, grid system, and color utilities.
@@ -25,4 +32,4 @@ This project helped me understand how Bootstrap 5 simplifies layout management a
 
 ---
 
-**AI Usage:** I used ChatGPT to assist with project description formatting and layout explanations, but all code, styling, and design decisions were my own.
+**AI Usage:** I used ChatGPT to help refine the project description and formatting, but all Bootstrap code and design decisions were my own.
