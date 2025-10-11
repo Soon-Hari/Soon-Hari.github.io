@@ -1,9 +1,16 @@
 ---
 layout: essay
+type: essay
 title: "Why UI Frameworks Are Worth the Struggle"
 date: 2025-10-09
-tags: [Bootstrap5, UIFrameworks, WebDevelopment, ICS314]
+labels:
+  - bootstrap
+  - ui frameworks
+  - web development
+  - ics314
 ---
+
+# Why UI Frameworks Are Worth the Struggle
 
 ## Introduction: Why Frameworks Exist
 When I first started building websites using raw HTML and CSS, I quickly realized how tedious it was to make everything responsive and visually consistent. Aligning elements, managing spacing, and creating layouts that looked good on both desktop and mobile screens took hours. That’s where UI frameworks like **Bootstrap 5** come in. They provide a collection of pre-designed components and a powerful grid system that make professional web design much more efficient.
@@ -14,10 +21,10 @@ Learning Bootstrap 5 wasn’t exactly a smooth ride. At first, I struggled to un
 ## The Benefits in Practice
 Once I got comfortable with Bootstrap 5, the benefits became clear:
 
-- **Speed:** I could build responsive layouts in minutes using pre-made components like navbars, cards, and carousels.  
-- **Consistency:** Every element followed a uniform design language, which made my pages look professional.  
-- **Flexibility:** Utility classes like `text-center`, `bg-primary`, and `mt-3` allowed me to adjust spacing, colors, and alignment instantly.  
-- **Responsiveness:** The built-in breakpoints automatically adjusted my layout for phones, tablets, and desktops without extra CSS.
+* **Speed:** I could build responsive layouts in minutes using pre-made components like navbars, cards, and carousels.  
+* **Consistency:** Every element followed a uniform design language, which made my pages look professional.  
+* **Flexibility:** Utility classes like `text-center`, `bg-primary`, and `mt-3` allowed me to adjust spacing, colors, and alignment instantly.  
+* **Responsiveness:** The built-in breakpoints automatically adjusted my layout for phones, tablets, and desktops without extra CSS.
 
 For example, in my *Island Snow* project, I used Bootstrap 5 to create a responsive product grid that automatically rearranged columns depending on screen size. What would have taken me an hour with pure CSS took only a few minutes.
 
