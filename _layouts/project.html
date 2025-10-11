@@ -1,8 +1,18 @@
 ---
-layout: home
+layout: default
+title: Projects
 ---
 
 <div class="container py-4">
-  <h1 class="display-4">{{ page.title }}</h1>
- {{ content }}
+  <h1 class="display-4">Projects</h1>
+  <hr>
+  <div class="row">
+    {% for project in site.projects %}
+      <div class="col-md-6 mb-4">
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.excerpt }}</p>
+        <small>{{ project.date | date: "%B %d, %Y" }}</small>
+      </div>
+    {% endfor %}
+  </div>
 </div>
