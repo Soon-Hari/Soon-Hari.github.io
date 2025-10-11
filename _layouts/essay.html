@@ -1,10 +1,18 @@
 ---
-layout: home
+layout: default
+title: Essays
 ---
 
 <div class="container py-4">
-  <h1 class="display-4">{{ page.title }}</h1>
-  <span class="date">{{ page.date | date_to_string }}</span>
+  <h1 class="display-4">Essays</h1>
   <hr>
-  {{ content }}
+  <div class="row">
+    {% for essay in site.essays %}
+      <div class="col-md-6 mb-4">
+        <h3><a href="{{ essay.url | relative_url }}">{{ essay.title }}</a></h3>
+        <p>{{ essay.excerpt }}</p>
+        <small>{{ essay.date | date: "%B %d, %Y" }}</small>
+      </div>
+    {% endfor %}
+  </div>
 </div>
