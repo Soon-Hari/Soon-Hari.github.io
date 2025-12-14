@@ -1,16 +1,13 @@
 ---
-
 layout: essay
 type: essay
 title: "Effort Estimation: From Guesswork to Insight"
 date: 2025-12-14
 labels:
-
-* Effort Estimation
-* Project Management
-* Software Engineering
-* ICS 314
-
+  - Effort Estimation
+  - Project Management
+  - Software Engineering
+  - ICS 314
 ---
 
 ## Effort Estimation: From Guesswork to Insight
