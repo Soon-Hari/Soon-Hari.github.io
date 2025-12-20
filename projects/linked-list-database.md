@@ -8,6 +8,8 @@ labels:
   - Data Structures
   - File I/O
 logo: https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg
+image: https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-linked-list-normal-image01.jpg
+
 ---
 
 ## Linked List Database ⚙️
