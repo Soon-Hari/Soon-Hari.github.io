@@ -8,7 +8,9 @@ labels:
   - Software Engineering
   - Full Stack
   - Agile Development
+
 logo: img/Manoa.png
+image: img/Manoa.png
 ---
 Manoa Lost & Found is a full-stack web application designed to help University of Hawaiʻi at Mānoa students, faculty, and staff report and recover lost items on campus. The project addresses a real problem on campus by providing a centralized, searchable alternative to informal solutions such as group chats or social media posts.
 
