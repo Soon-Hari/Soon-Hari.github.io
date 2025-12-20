@@ -4,7 +4,8 @@ type: project
 title: "Skull & Crown Trading Co."
 date: 2025-10-08
 github: "https://github.com/soon-hari/experience-bootstrap-yourchoice-skullandcrown"
-image: "https://images.squarespace-cdn.com/content/5cfada745fa13c000127af4c/e1684bdc-bb6d-4cdc-b473-a3ef470a2688/skullandcrowngoldlogo.png?format=1000w&content-type=image%2Fpng"
+logo: ../img/skull.png
+image: ../img/skull.png
 labels:
   - Bootstrap 5
   - Web Design
